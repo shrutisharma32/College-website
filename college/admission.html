@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="college_logo.png" alt="College Logo">
+            </div>
+            <h1 >Institute Of Engineering And Technology</h1>
+           </div> 
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="admission-form">
+        <h2>Admission Form</h2>
+        <form action="submit_admission.php" method="post">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select</option>
+                <option value="arts">Arts</option>
+                <option value="science">Science</option>
+                <option value="commerce">Commerce</option>
+            </select>
+
+            <label for="10th-percentage">10th Percentage:</label>
+            <input type="number" id="10th-percentage" name="10th-percentage" min="0" max="100" step="0.01" required>
+
+            <label for="12th-percentage">12th Percentage:</label>
+            <input type="number" id="12th-percentage" name="12th-percentage" min="0" max="100" step="0.01" required>
+
+            <label for="entrance-score">Entrance Exam Score:</label>
+            <input type="number" id="entrance-score" name="entrance-score" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="previous-school">Previous School/College:</label>
+            <input type="text" id="previous-school" name="previous-school" required>
+
+            <label for="message">Message (if any):</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 IET-DAVV</p>
+    </footer>
+</body>
+</html>

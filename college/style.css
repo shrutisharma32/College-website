@@ -1,0 +1,203 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+     
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Ensure image doesn't overflow */
+    margin-right: 20px; /* Add margin to create space between logo and college name */
+}
+
+.logo img {
+    width: 100%; /* Make sure the image fills the circular container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center; /* Align content center */
+    position:sticky;
+}
+
+nav {
+    margin-top: 20px; /* Add margin to create space between college name and nav */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+}
+
+nav ul li {
+    margin-right: 20px;
+    
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+nav ul li a:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+.description {
+    padding: 20px 20px;
+    text-align: left;
+    color: #333;
+    /* background-image: url('college_logo.png'); /* Replace 'college_logo.png' with the path to your logo image */
+    background-size:contain;
+    background-position: center;
+    opacity: 0.7; */
+}
+
+.home-section {
+    padding: 100px 20px;
+    text-align: center;
+    color: #333;
+    
+
+}
+.academics h2,
+.science h2,
+.commerce h2 {
+    background: #333; /* Match background color with college name */
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px; /* Add margin to separate sections */
+}
+
+.academics ul,
+.science ul,
+.commerce ul {
+    list-style-type: none;
+}
+
+.academics ul li,
+.science ul li,
+.commerce ul li {
+    margin-bottom: 10px;
+}
+
+.academics ul li a,
+.science ul li a,
+.commerce ul li a {
+    color: #333; /* Change link color */
+    text-decoration: none;
+    transition: color 0.3s; /* Add transition for smooth effect */
+}
+
+.academics ul li a:hover,
+.science ul li a:hover,
+.commerce ul li a:hover {
+    color: #ffd700; /* Change link color on hover */
+}
+.academics{
+    text-align: center;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.admission-form {
+    margin-top: 20px;
+}
+
+.admission-form h2 {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.admission-form form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admission-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.admission-form input[type="text"],
+.admission-form input[type="email"],
+.admission-form input[type="tel"],
+.admission-form input[type="date"],
+.admission-form select,
+.admission-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.admission-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.admission-form button:hover {
+    background-color: #555;
+}
+.college-gallery{
+    text-align: center;
+}
+.gallery {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gallery h2 {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo {
+    margin: 10px;
+}
+
+.photo img {
+    width: 300px; /* Fixed width for all images */
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+.course {
+    padding: 20px 20px;
+    text-align: left;
+}
